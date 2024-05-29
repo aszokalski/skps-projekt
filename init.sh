@@ -1,0 +1,1 @@
+echo "src-git skps https://github.com/aszokalski/skps-projekt.git" >> feeds.conf.default
