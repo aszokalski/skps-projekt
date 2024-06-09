@@ -1,0 +1,4 @@
+/home/aszokalski/Documents/skps-projekt/packages/lidar/src/cmake-build-debug/CMakeFiles/main.dir
+/home/aszokalski/Documents/skps-projekt/packages/lidar/src/cmake-build-debug/CMakeFiles/connection.dir
+/home/aszokalski/Documents/skps-projekt/packages/lidar/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/aszokalski/Documents/skps-projekt/packages/lidar/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
