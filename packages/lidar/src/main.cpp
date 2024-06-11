@@ -10,6 +10,7 @@
 
 #include "vl53l0x_api.h"
 #include "vl53l0x_platform.h"
+#include "message_queue.h"
 
 #define MAX_DEGREE 180
 #define MIN_DEGREE 0
@@ -189,47 +190,6 @@ private:
 
 // https://man7.org/linux/man-pages/man2/mq_open.2.html
 // https://w3.cs.jmu.edu/kirkpams/OpenCSF/Books/csf/html/MQueues.html
-class MessageQueue{
-public:
-    MessageQueue(){
-        queue_data = mq_open("/data", O_WRONLY);
-        if (queue_data < 0) {
-            throw std::runtime_error(
-                    (std::ostringstream()
-                            << "MessageQueue data init failed"
-                            << "\n"
-                    ).str()
-            );
-        }
-    }
-
-    ~MessageQueue(){
-        if (queue_data > 0) {
-            mq_close(queue_data);
-        }
-    }
-
-    void send_data(uint16_t angle, uint16_t distance) {
-        std::cout<< "Sending data" << std::endl;
-        std::cout << "angle = " << angle << std::endl;
-        std::cout << "distance = " << distance << std::endl;
-        std::cout << std::endl;
-
-        std::string data = std::to_string(angle) + "," + std::to_string(distance);
-        int sent = mq_send(queue_data, data.c_str(), data.size() + 1, 1);
-        if (sent < 0) {
-            throw std::runtime_error(
-                    (std::ostringstream()
-                            << "Queue data failed to send"
-                            << "\n"
-                    ).str()
-            );
-        }
-    }
-
-private:
-    mqd_t volatile queue_data = 0;
-};
 
 
 int main() {
@@ -257,6 +217,5 @@ int main() {
             direction = -direction;
         }
     }
-
     return 0;
 }
