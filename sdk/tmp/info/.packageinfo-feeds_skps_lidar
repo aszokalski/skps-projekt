@@ -1,0 +1,20 @@
+Source-Makefile: package/feeds/skps/lidar/Makefile
+
+Package: lidar
+Version: 1
+Depends: +libc +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: projekt
+Category: Projekt
+Repository: skps
+Title: lidar
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   Lidar app for project.
+
+@@
+
+

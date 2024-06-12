@@ -1,0 +1,532 @@
+menuconfig IMAGEOPT
+	bool "Image configuration"
+	default n
+source "package/*/image-config.in"
+menu "Base system"
+
+	config PACKAGE_libasan
+		tristate "libasan...................... Runtime library for AddressSanitizer in GCC"
+		default y if DEFAULT_libasan
+		default m if ALL||ALL_NONSHARED
+		select PACKAGE_libstdcpp
+		depends on !arc
+		depends on !mips64
+		depends on USE_GLIBC
+		depends on !mips64el
+		select PACKAGE_librt
+		help
+		 Runtime library for AddressSanitizer in GCC
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_libasan
+	
+		config LIBASAN_ROOT_DIR
+			string
+			prompt "libasan shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libasan
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBASAN_FILE_SPEC
+			string
+			prompt "libasan shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libasan
+			default "./lib/libasan.so.*"
+	
+		endmenu
+
+	config PACKAGE_libatomic
+		tristate "libatomic......................................... Atomic support library"
+		default y if DEFAULT_libatomic
+		default m if ALL||ALL_NONSHARED
+		select PACKAGE_libgcc
+		help
+		 Atomic support library
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libatomic
+	
+		config LIBATOMIC_ROOT_DIR
+			string
+			prompt "libatomic shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libatomic
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBATOMIC_FILE_SPEC
+			string
+			prompt "libatomic shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libatomic
+			default "./lib/libatomic.so.*"
+	
+		endmenu
+
+	config PACKAGE_libc
+		tristate "libc........................................................... C library"
+		default y if DEFAULT_libc
+		default m if ALL||ALL_NONSHARED
+		select PACKAGE_libgcc
+		help
+		 C library
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_libc
+	
+		config LIBC_ROOT_DIR
+			string
+			prompt "libc shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libc
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBC_FILE_SPEC
+			string
+			prompt "libc shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libc
+			default "./lib/ld{*.so*,-linux*.so.*} ./lib/lib{anl,c,cidn,crypt,dl,m,nsl,nss_dns,nss_files,resolv,util}{-*.so,.so.*,.so}"
+	
+		endmenu
+
+	config PACKAGE_libgcc
+		tristate "libgcc............................................... GCC support library"
+		default y if DEFAULT_libgcc
+		default m if ALL||ALL_NONSHARED
+		help
+		 GCC support library
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgcc
+	
+		config LIBGCC_ROOT_DIR
+			string
+			prompt "libgcc shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgcc
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBGCC_FILE_SPEC
+			string
+			prompt "libgcc shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgcc
+			default "./lib/libgcc_s.so.*"
+	
+		endmenu
+
+	config PACKAGE_libgfortran
+		tristate "libgfortran..................................... GFortran support library"
+		default y if DEFAULT_libgfortran
+		default m if ALL||ALL_NONSHARED
+		depends on INSTALL_GFORTRAN
+		help
+		 GFortran support library
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgfortran
+	
+		config LIBGFORTRAN_ROOT_DIR
+			string
+			prompt "libgfortran shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgfortran
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBGFORTRAN_FILE_SPEC
+			string
+			prompt "libgfortran shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgfortran
+			default "./usr/lib/libgfortran.so.*"
+	
+		endmenu
+
+	config PACKAGE_libgomp
+		tristate "libgomp........................................... OpenMP support library"
+		default y if DEFAULT_libgomp
+		default m if ALL||ALL_NONSHARED
+		help
+		 OpenMP support library
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgomp
+	
+		config LIBGOMP_ROOT_DIR
+			string
+			prompt "libgomp shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgomp
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBGOMP_FILE_SPEC
+			string
+			prompt "libgomp shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libgomp
+			default "./lib/libgomp.so*"
+	
+		endmenu
+
+	config PACKAGE_liblsan
+		tristate "liblsan......................... Runtime library for LeakSanitizer in GCC"
+		default y if DEFAULT_liblsan
+		default m if ALL||ALL_NONSHARED
+		depends on !mipsel
+		select PACKAGE_libstdcpp
+		depends on !mips64
+		depends on !arc
+		depends on USE_GLIBC
+		depends on !mips
+		select PACKAGE_librt
+		depends on !mips64el
+		help
+		 Runtime library for LeakSanitizer in GCC
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_liblsan
+	
+		config LIBLSAN_ROOT_DIR
+			string
+			prompt "liblsan shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_liblsan
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBLSAN_FILE_SPEC
+			string
+			prompt "liblsan shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_liblsan
+			default "./lib/liblsan.so.*"
+	
+		endmenu
+
+	config PACKAGE_libpthread
+		tristate "libpthread.......................................... POSIX thread library"
+		default y if DEFAULT_libpthread
+		default m if ALL||ALL_NONSHARED
+		select PACKAGE_libgcc
+		help
+		 POSIX thread library
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_libpthread
+	
+		config LIBPTHREAD_ROOT_DIR
+			string
+			prompt "libpthread shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libpthread
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBPTHREAD_FILE_SPEC
+			string
+			prompt "libpthread shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libpthread
+			default "./lib/libpthread{-*.so,.so.*}"
+	
+		endmenu
+
+	config PACKAGE_librt
+		tristate "librt................................ POSIX.1b RealTime extension library"
+		default y if DEFAULT_librt
+		default m if ALL||ALL_NONSHARED
+		select PACKAGE_libpthread
+		help
+		 POSIX.1b RealTime extension library
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_librt
+	
+		config LIBRT_ROOT_DIR
+			string
+			prompt "librt shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_librt
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBRT_FILE_SPEC
+			string
+			prompt "librt shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_librt
+			default "./lib/librt{-*.so,.so.*}"
+	
+		endmenu
+
+	config PACKAGE_libstdcpp
+		tristate "libstdcpp.................................... GNU Standard C++ Library v3"
+		default y if DEFAULT_libstdcpp
+		default m if ALL||ALL_NONSHARED
+		help
+		 GNU Standard C++ Library v3
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_libstdcpp
+	
+		config LIBSTDCPP_ROOT_DIR
+			string
+			prompt "libstdcpp shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libstdcpp
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBSTDCPP_FILE_SPEC
+			string
+			prompt "libstdc++ shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libstdcpp
+			default "./lib/libstdc++.so.*"
+	
+		endmenu
+
+	config PACKAGE_libthread-db
+		tristate "libthread-db...................... POSIX thread library debugging support"
+		default y if DEFAULT_libthread-db
+		default m if ALL||ALL_NONSHARED
+		depends on !USE_MUSL
+		help
+		 POSIX thread library debugging support
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_libthread-db
+	
+		config LIBTHREAD_DB_ROOT_DIR
+			string
+			prompt "POSIX thread debugging shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libthread-db
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBTHREAD_DB_FILE_SPEC
+			string
+			prompt "POSIX thread debugging shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libthread-db
+			default "./lib/libthread_db{-*.so,.so.*}"
+	
+		endmenu
+
+	config PACKAGE_libtsan
+		tristate "libtsan....................... Runtime library for ThreadSanitizer in GCC"
+		default y if DEFAULT_libtsan
+		default m if ALL||ALL_NONSHARED
+		depends on !mipsel
+		select PACKAGE_libstdcpp
+		depends on !mips64
+		depends on !arc
+		depends on USE_GLIBC
+		depends on !mips
+		select PACKAGE_librt
+		depends on !mips64el
+		help
+		 Runtime library for ThreadSanitizer in GCC
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_libtsan
+	
+		config LIBTSAN_ROOT_DIR
+			string
+			prompt "libtsan shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libtsan
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBTSAN_FILE_SPEC
+			string
+			prompt "libtsan shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libtsan
+			default "./lib/libtsan.so.*"
+	
+		endmenu
+
+	config PACKAGE_libubsan
+		tristate "libubsan........... Runtime library for UndefinedBehaviorSanitizer in GCC"
+		default y if DEFAULT_libubsan
+		default m if ALL||ALL_NONSHARED
+		depends on !mips64el
+		select PACKAGE_librt
+		depends on USE_GLIBC
+		depends on !arc
+		depends on !mips64
+		select PACKAGE_libstdcpp
+		help
+		 Runtime library for UndefinedBehaviorSanitizer in GCC
+		 http://gcc.gnu.org/
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+		depends on EXTERNAL_TOOLCHAIN && PACKAGE_libubsan
+	
+		config LIBUBSAN_ROOT_DIR
+			string
+			prompt "libubsan shared library base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libubsan
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LIBUBSAN_FILE_SPEC
+			string
+			prompt "libubsan shared library files (use wildcards)"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_libubsan
+			default "./lib/libubsan.so.*"
+	
+		endmenu
+
+endmenu
+
+menu "Kernel modules"
+
+menu "Block Devices"
+endmenu
+menu "CAN Support"
+endmenu
+menu "Cryptographic API modules"
+endmenu
+menu "Filesystems"
+endmenu
+menu "FireWire support"
+endmenu
+menu "GPIO support"
+endmenu
+menu "Hardware Monitoring Support"
+endmenu
+menu "I2C support"
+endmenu
+menu "Industrial I/O Modules"
+endmenu
+menu "Input modules"
+endmenu
+menu "LED modules"
+endmenu
+menu "Libraries"
+endmenu
+menu "Multiplexer Support"
+endmenu
+menu "Native Language Support"
+endmenu
+menu "Netfilter Extensions"
+endmenu
+menu "Network Devices"
+endmenu
+menu "Network Support"
+endmenu
+menu "Other modules"
+endmenu
+menu "PCMCIA support"
+endmenu
+menu "SPI Support"
+endmenu
+menu "Sound Support"
+endmenu
+menu "USB Support"
+endmenu
+menu "Video Support"
+endmenu
+menu "Virtualization"
+endmenu
+menu "W1 support"
+endmenu
+menu "WPAN 802.15.4 Support"
+endmenu
+endmenu
+
+menu "Projekt"
+
+	config PACKAGE_lidar
+		tristate "lidar.............................................................. lidar"
+		default y if DEFAULT_lidar
+		default m if ALL
+		select PACKAGE_libstdcpp
+		select PACKAGE_libc
+		help
+		 Lidar app for project.
+		 
+
+endmenu
+
+menu "Utilities"
+
+	config PACKAGE_ldconfig
+		tristate "ldconfig............................... Shared library path configuration"
+		default y if DEFAULT_ldconfig
+		default m if ALL||ALL_NONSHARED
+		depends on !USE_MUSL
+		help
+		 Shared library path configuration
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_ldconfig
+	
+		config LDCONFIG_ROOT_DIR
+			string
+			prompt "ldconfig base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_ldconfig
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LDCONFIG_FILE_SPEC
+			string
+			prompt "ldconfig file"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_ldconfig
+			default "./sbin/ldconfig"
+	
+		endmenu
+
+	config PACKAGE_ldd
+		tristate "ldd.................................................... LDD trace utility"
+		default y if DEFAULT_ldd
+		default m if ALL||ALL_NONSHARED
+		depends on !USE_MUSL
+		help
+		 LDD trace utility
+		 Felix Fietkau <nbd@nbd.name>
+
+
+		menu "Configuration"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_ldd
+	
+		config LDD_ROOT_DIR
+			string
+			prompt "ldd trace utility base directory"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_ldd
+			default TOOLCHAIN_ROOT  if !NATIVE_TOOLCHAIN
+			default "/"  if NATIVE_TOOLCHAIN
+	
+		config LDD_FILE_SPEC
+			string
+			prompt "ldd trace utility file"
+			depends on EXTERNAL_TOOLCHAIN && PACKAGE_ldd
+			default "./usr/bin/ldd"
+	
+		endmenu
+
+endmenu
+

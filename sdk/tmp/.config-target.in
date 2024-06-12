@@ -1,0 +1,1834 @@
+config DEFAULT_TARGET_bcm27xx_bcm2708
+	bool
+	depends on TARGET_PER_DEVICE_ROOTFS
+	default y if TARGET_bcm27xx_bcm2708
+	select DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+config DEFAULT_TARGET_bcm27xx_bcm2709
+	bool
+	depends on TARGET_PER_DEVICE_ROOTFS
+	default y if TARGET_bcm27xx_bcm2709
+	select DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+config DEFAULT_TARGET_bcm27xx_bcm2710
+	bool
+	depends on TARGET_PER_DEVICE_ROOTFS
+	default y if TARGET_bcm27xx_bcm2710
+	select DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+config DEFAULT_TARGET_bcm27xx_bcm2711
+	bool
+	depends on TARGET_PER_DEVICE_ROOTFS
+	default y if TARGET_bcm27xx_bcm2711
+	select DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+choice
+	prompt "Target System"
+	default TARGET_ath79
+	reset if !DEVEL
+	
+config TARGET_bcm27xx
+	bool "Broadcom BCM27xx"
+	select HAS_SUBTARGETS
+	help
+	  Build firmware image for Broadcom BCM27xx SoC devices.
+	  Currently produces SD Card image for Raspberry Pi.
+
+
+endchoice
+
+choice
+	prompt "Subtarget" if HAS_SUBTARGETS
+
+config TARGET_bcm27xx_bcm2708
+	bool "BCM2708 boards (32 bit)"
+	select LINUX_5_15 if !TESTING_KERNEL
+	select LINUX_5_15 if TESTING_KERNEL
+	depends on TARGET_bcm27xx
+	select AUDIO_SUPPORT
+	select USES_BOOT_PART
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select USES_ROOTFS_PART
+	select RTC_SUPPORT
+	select USES_SQUASHFS
+	select USB_SUPPORT
+	select USB_GADGET_SUPPORT
+	select arm
+	select HAS_DEVICES
+	help
+	  Build firmware image for BCM2708 devices.
+	  This firmware features a 32 bit kernel.
+
+
+config TARGET_bcm27xx_bcm2709
+	bool "BCM2709/BCM2710/BCM2711 boards (32 bit)"
+	select LINUX_5_15 if !TESTING_KERNEL
+	select LINUX_5_15 if TESTING_KERNEL
+	depends on TARGET_bcm27xx
+	select arm_v7
+	select AUDIO_SUPPORT
+	select USES_BOOT_PART
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select PCI_SUPPORT
+	select PCIE_SUPPORT
+	select USES_ROOTFS_PART
+	select RTC_SUPPORT
+	select USES_SQUASHFS
+	select USB_SUPPORT
+	select USB_GADGET_SUPPORT
+	select arm
+	select HAS_DEVICES
+	help
+	  Build firmware image for BCM2709/BCM2710/BCM2711 devices.
+	  This firmware features a 32 bit kernel.
+
+
+config TARGET_bcm27xx_bcm2710
+	bool "BCM2710 boards (64 bit)"
+	select LINUX_5_15 if !TESTING_KERNEL
+	select LINUX_5_15 if TESTING_KERNEL
+	depends on TARGET_bcm27xx
+	select AUDIO_SUPPORT
+	select USES_BOOT_PART
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select PCI_SUPPORT
+	select USES_ROOTFS_PART
+	select RTC_SUPPORT
+	select USES_SQUASHFS
+	select USB_SUPPORT
+	select USB_GADGET_SUPPORT
+	select aarch64
+	select HAS_DEVICES
+	help
+	  Build firmware image for BCM2710 devices.
+	  This firmware features a 64 bit kernel.
+
+
+config TARGET_bcm27xx_bcm2711
+	bool "BCM2711 boards (64 bit)"
+	select LINUX_5_15 if !TESTING_KERNEL
+	select LINUX_5_15 if TESTING_KERNEL
+	depends on TARGET_bcm27xx
+	select AUDIO_SUPPORT
+	select USES_BOOT_PART
+	select DISPLAY_SUPPORT
+	select USES_DEVICETREE
+	select USES_EXT4
+	select HAS_FPU
+	select GPIO_SUPPORT
+	select PCI_SUPPORT
+	select PCIE_SUPPORT
+	select USES_ROOTFS_PART
+	select RTC_SUPPORT
+	select USES_SQUASHFS
+	select USB_SUPPORT
+	select USB_GADGET_SUPPORT
+	select aarch64
+	select HAS_DEVICES
+	help
+	  Build firmware image for BCM2711 devices.
+	  This firmware features a 64 bit kernel.
+
+
+endchoice
+
+choice
+	prompt "Target Profile"
+	default TARGET_MULTI_PROFILE if BUILDBOT
+
+	default TARGET_bcm27xx_bcm2708_DEVICE_rpi if TARGET_bcm27xx_bcm2708 && !BUILDBOT
+	default TARGET_bcm27xx_bcm2709_DEVICE_rpi-2 if TARGET_bcm27xx_bcm2709 && !BUILDBOT
+	default TARGET_bcm27xx_bcm2710_DEVICE_rpi-3 if TARGET_bcm27xx_bcm2710 && !BUILDBOT
+	default TARGET_bcm27xx_bcm2711_DEVICE_rpi-4 if TARGET_bcm27xx_bcm2711 && !BUILDBOT
+
+config TARGET_MULTI_PROFILE
+	bool "Multiple devices"
+	depends on HAS_DEVICES
+	help
+	Instead of only building a single image, or all images, this allows you
+	to select images to be built for multiple devices in one build.
+
+config TARGET_bcm27xx_bcm2708_DEVICE_rpi
+	bool "Raspberry Pi B/B+/CM/Zero/ZeroW"
+	depends on TARGET_bcm27xx_bcm2708
+	select DEFAULT_base-files
+	select DEFAULT_bcm27xx-gpu-fw
+	select DEFAULT_brcmfmac-nvram-43430-sdio
+	select DEFAULT_busybox
+	select DEFAULT_ca-bundle
+	select DEFAULT_cypress-firmware-43430-sdio
+	select DEFAULT_dnsmasq
+	select DEFAULT_dropbear
+	select DEFAULT_e2fsprogs
+	select DEFAULT_firewall4
+	select DEFAULT_fstools
+	select DEFAULT_iwinfo
+	select DEFAULT_kmod-brcmfmac
+	select DEFAULT_kmod-fs-vfat
+	select DEFAULT_kmod-nft-offload
+	select DEFAULT_kmod-nls-cp437
+	select DEFAULT_kmod-nls-iso8859-1
+	select DEFAULT_kmod-sound-arm-bcm2835
+	select DEFAULT_kmod-sound-core
+	select DEFAULT_kmod-usb-hid
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_libustream-mbedtls
+	select DEFAULT_logd
+	select DEFAULT_mkf2fs
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_nftables
+	select DEFAULT_odhcp6c
+	select DEFAULT_odhcpd-ipv6only
+	select DEFAULT_opkg
+	select DEFAULT_partx-utils
+	select DEFAULT_ppp
+	select DEFAULT_ppp-mod-pppoe
+	select DEFAULT_procd
+	select DEFAULT_procd-ujail
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+	select DEFAULT_urandom-seed
+	select DEFAULT_wpad-basic-mbedtls
+	help
+	  Build firmware images for Raspberry Pi B/B+/CM/Zero/ZeroW
+	  
+config TARGET_bcm27xx_bcm2709_DEVICE_rpi-2
+	bool "Raspberry Pi 3B/3B+/CM3 (32bit) (Raspberry Pi 2B/2B 1.2 (32bit))"
+	depends on TARGET_bcm27xx_bcm2709
+	select DEFAULT_base-files
+	select DEFAULT_bcm27xx-gpu-fw
+	select DEFAULT_brcmfmac-nvram-43430-sdio
+	select DEFAULT_brcmfmac-nvram-43455-sdio
+	select DEFAULT_busybox
+	select DEFAULT_ca-bundle
+	select DEFAULT_cypress-firmware-43430-sdio
+	select DEFAULT_cypress-firmware-43455-sdio
+	select DEFAULT_dnsmasq
+	select DEFAULT_dropbear
+	select DEFAULT_e2fsprogs
+	select DEFAULT_firewall4
+	select DEFAULT_fstools
+	select DEFAULT_iwinfo
+	select DEFAULT_kmod-brcmfmac
+	select DEFAULT_kmod-fs-vfat
+	select DEFAULT_kmod-nft-offload
+	select DEFAULT_kmod-nls-cp437
+	select DEFAULT_kmod-nls-iso8859-1
+	select DEFAULT_kmod-sound-arm-bcm2835
+	select DEFAULT_kmod-sound-core
+	select DEFAULT_kmod-usb-hid
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_libustream-mbedtls
+	select DEFAULT_logd
+	select DEFAULT_mkf2fs
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_nftables
+	select DEFAULT_odhcp6c
+	select DEFAULT_odhcpd-ipv6only
+	select DEFAULT_opkg
+	select DEFAULT_partx-utils
+	select DEFAULT_ppp
+	select DEFAULT_ppp-mod-pppoe
+	select DEFAULT_procd
+	select DEFAULT_procd-ujail
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+	select DEFAULT_urandom-seed
+	select DEFAULT_wpad-basic-mbedtls
+	help
+	  Build firmware images for Raspberry Pi 2B/2B 1.2 (32bit)
+	  Alternative device titles:
+	  - Raspberry Pi 3B/3B+/CM3 (32bit)
+	  - Raspberry Pi 4B/400/CM4 (32bit)
+	  
+config TARGET_bcm27xx_bcm2709_DEVICE_rpi-2
+	bool "Raspberry Pi 4B/400/CM4 (32bit) (Raspberry Pi 2B/2B 1.2 (32bit))"
+	depends on TARGET_bcm27xx_bcm2709
+	select DEFAULT_base-files
+	select DEFAULT_bcm27xx-gpu-fw
+	select DEFAULT_brcmfmac-nvram-43430-sdio
+	select DEFAULT_brcmfmac-nvram-43455-sdio
+	select DEFAULT_busybox
+	select DEFAULT_ca-bundle
+	select DEFAULT_cypress-firmware-43430-sdio
+	select DEFAULT_cypress-firmware-43455-sdio
+	select DEFAULT_dnsmasq
+	select DEFAULT_dropbear
+	select DEFAULT_e2fsprogs
+	select DEFAULT_firewall4
+	select DEFAULT_fstools
+	select DEFAULT_iwinfo
+	select DEFAULT_kmod-brcmfmac
+	select DEFAULT_kmod-fs-vfat
+	select DEFAULT_kmod-nft-offload
+	select DEFAULT_kmod-nls-cp437
+	select DEFAULT_kmod-nls-iso8859-1
+	select DEFAULT_kmod-sound-arm-bcm2835
+	select DEFAULT_kmod-sound-core
+	select DEFAULT_kmod-usb-hid
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_libustream-mbedtls
+	select DEFAULT_logd
+	select DEFAULT_mkf2fs
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_nftables
+	select DEFAULT_odhcp6c
+	select DEFAULT_odhcpd-ipv6only
+	select DEFAULT_opkg
+	select DEFAULT_partx-utils
+	select DEFAULT_ppp
+	select DEFAULT_ppp-mod-pppoe
+	select DEFAULT_procd
+	select DEFAULT_procd-ujail
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+	select DEFAULT_urandom-seed
+	select DEFAULT_wpad-basic-mbedtls
+	help
+	  Build firmware images for Raspberry Pi 2B/2B 1.2 (32bit)
+	  Alternative device titles:
+	  - Raspberry Pi 3B/3B+/CM3 (32bit)
+	  - Raspberry Pi 4B/400/CM4 (32bit)
+	  
+config TARGET_bcm27xx_bcm2709_DEVICE_rpi-2
+	bool "Raspberry Pi 2B/2B 1.2 (32bit)"
+	depends on TARGET_bcm27xx_bcm2709
+	select DEFAULT_base-files
+	select DEFAULT_bcm27xx-gpu-fw
+	select DEFAULT_brcmfmac-nvram-43430-sdio
+	select DEFAULT_brcmfmac-nvram-43455-sdio
+	select DEFAULT_busybox
+	select DEFAULT_ca-bundle
+	select DEFAULT_cypress-firmware-43430-sdio
+	select DEFAULT_cypress-firmware-43455-sdio
+	select DEFAULT_dnsmasq
+	select DEFAULT_dropbear
+	select DEFAULT_e2fsprogs
+	select DEFAULT_firewall4
+	select DEFAULT_fstools
+	select DEFAULT_iwinfo
+	select DEFAULT_kmod-brcmfmac
+	select DEFAULT_kmod-fs-vfat
+	select DEFAULT_kmod-nft-offload
+	select DEFAULT_kmod-nls-cp437
+	select DEFAULT_kmod-nls-iso8859-1
+	select DEFAULT_kmod-sound-arm-bcm2835
+	select DEFAULT_kmod-sound-core
+	select DEFAULT_kmod-usb-hid
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_libustream-mbedtls
+	select DEFAULT_logd
+	select DEFAULT_mkf2fs
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_nftables
+	select DEFAULT_odhcp6c
+	select DEFAULT_odhcpd-ipv6only
+	select DEFAULT_opkg
+	select DEFAULT_partx-utils
+	select DEFAULT_ppp
+	select DEFAULT_ppp-mod-pppoe
+	select DEFAULT_procd
+	select DEFAULT_procd-ujail
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+	select DEFAULT_urandom-seed
+	select DEFAULT_wpad-basic-mbedtls
+	help
+	  Build firmware images for Raspberry Pi 2B/2B 1.2 (32bit)
+	  Alternative device titles:
+	  - Raspberry Pi 3B/3B+/CM3 (32bit)
+	  - Raspberry Pi 4B/400/CM4 (32bit)
+	  
+config TARGET_bcm27xx_bcm2710_DEVICE_rpi-3
+	bool "Raspberry Pi 2B-1.2 (64bit) (Raspberry Pi 3B/3B+/CM3 (64bit))"
+	depends on TARGET_bcm27xx_bcm2710
+	select DEFAULT_base-files
+	select DEFAULT_bcm27xx-gpu-fw
+	select DEFAULT_brcmfmac-nvram-43430-sdio
+	select DEFAULT_brcmfmac-nvram-43455-sdio
+	select DEFAULT_busybox
+	select DEFAULT_ca-bundle
+	select DEFAULT_cypress-firmware-43430-sdio
+	select DEFAULT_cypress-firmware-43455-sdio
+	select DEFAULT_dnsmasq
+	select DEFAULT_dropbear
+	select DEFAULT_e2fsprogs
+	select DEFAULT_firewall4
+	select DEFAULT_fstools
+	select DEFAULT_iwinfo
+	select DEFAULT_kmod-brcmfmac
+	select DEFAULT_kmod-fs-vfat
+	select DEFAULT_kmod-nft-offload
+	select DEFAULT_kmod-nls-cp437
+	select DEFAULT_kmod-nls-iso8859-1
+	select DEFAULT_kmod-sound-arm-bcm2835
+	select DEFAULT_kmod-sound-core
+	select DEFAULT_kmod-usb-hid
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_libustream-mbedtls
+	select DEFAULT_logd
+	select DEFAULT_mkf2fs
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_nftables
+	select DEFAULT_odhcp6c
+	select DEFAULT_odhcpd-ipv6only
+	select DEFAULT_opkg
+	select DEFAULT_partx-utils
+	select DEFAULT_ppp
+	select DEFAULT_ppp-mod-pppoe
+	select DEFAULT_procd
+	select DEFAULT_procd-ujail
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+	select DEFAULT_urandom-seed
+	select DEFAULT_wpad-basic-mbedtls
+	help
+	  Build firmware images for Raspberry Pi 3B/3B+/CM3 (64bit)
+	  Alternative device titles:
+	  - Raspberry Pi 2B-1.2 (64bit)
+	  
+config TARGET_bcm27xx_bcm2710_DEVICE_rpi-3
+	bool "Raspberry Pi 3B/3B+/CM3 (64bit)"
+	depends on TARGET_bcm27xx_bcm2710
+	select DEFAULT_base-files
+	select DEFAULT_bcm27xx-gpu-fw
+	select DEFAULT_brcmfmac-nvram-43430-sdio
+	select DEFAULT_brcmfmac-nvram-43455-sdio
+	select DEFAULT_busybox
+	select DEFAULT_ca-bundle
+	select DEFAULT_cypress-firmware-43430-sdio
+	select DEFAULT_cypress-firmware-43455-sdio
+	select DEFAULT_dnsmasq
+	select DEFAULT_dropbear
+	select DEFAULT_e2fsprogs
+	select DEFAULT_firewall4
+	select DEFAULT_fstools
+	select DEFAULT_iwinfo
+	select DEFAULT_kmod-brcmfmac
+	select DEFAULT_kmod-fs-vfat
+	select DEFAULT_kmod-nft-offload
+	select DEFAULT_kmod-nls-cp437
+	select DEFAULT_kmod-nls-iso8859-1
+	select DEFAULT_kmod-sound-arm-bcm2835
+	select DEFAULT_kmod-sound-core
+	select DEFAULT_kmod-usb-hid
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_libustream-mbedtls
+	select DEFAULT_logd
+	select DEFAULT_mkf2fs
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_nftables
+	select DEFAULT_odhcp6c
+	select DEFAULT_odhcpd-ipv6only
+	select DEFAULT_opkg
+	select DEFAULT_partx-utils
+	select DEFAULT_ppp
+	select DEFAULT_ppp-mod-pppoe
+	select DEFAULT_procd
+	select DEFAULT_procd-ujail
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+	select DEFAULT_urandom-seed
+	select DEFAULT_wpad-basic-mbedtls
+	help
+	  Build firmware images for Raspberry Pi 3B/3B+/CM3 (64bit)
+	  Alternative device titles:
+	  - Raspberry Pi 2B-1.2 (64bit)
+	  
+config TARGET_bcm27xx_bcm2711_DEVICE_rpi-4
+	bool "Raspberry Pi 4B/400/CM4 (64bit)"
+	depends on TARGET_bcm27xx_bcm2711
+	select DEFAULT_base-files
+	select DEFAULT_bcm27xx-gpu-fw
+	select DEFAULT_brcmfmac-nvram-43455-sdio
+	select DEFAULT_busybox
+	select DEFAULT_ca-bundle
+	select DEFAULT_cypress-firmware-43455-sdio
+	select DEFAULT_dnsmasq
+	select DEFAULT_dropbear
+	select DEFAULT_e2fsprogs
+	select DEFAULT_firewall4
+	select DEFAULT_fstools
+	select DEFAULT_iwinfo
+	select DEFAULT_kmod-brcmfmac
+	select DEFAULT_kmod-fs-vfat
+	select DEFAULT_kmod-nft-offload
+	select DEFAULT_kmod-nls-cp437
+	select DEFAULT_kmod-nls-iso8859-1
+	select DEFAULT_kmod-r8169
+	select DEFAULT_kmod-sound-arm-bcm2835
+	select DEFAULT_kmod-sound-core
+	select DEFAULT_kmod-usb-hid
+	select DEFAULT_kmod-usb-net-lan78xx
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_libustream-mbedtls
+	select DEFAULT_logd
+	select DEFAULT_mkf2fs
+	select DEFAULT_mtd
+	select DEFAULT_netifd
+	select DEFAULT_nftables
+	select DEFAULT_odhcp6c
+	select DEFAULT_odhcpd-ipv6only
+	select DEFAULT_opkg
+	select DEFAULT_partx-utils
+	select DEFAULT_ppp
+	select DEFAULT_ppp-mod-pppoe
+	select DEFAULT_procd
+	select DEFAULT_procd-ujail
+	select DEFAULT_uci
+	select DEFAULT_uclient-fetch
+	select DEFAULT_urandom-seed
+	select DEFAULT_wpad-basic-mbedtls
+	help
+	  Build firmware images for Raspberry Pi 4B/400/CM4 (64bit)
+	  
+endchoice
+
+menu "Target Devices"
+	depends on TARGET_MULTI_PROFILE
+
+	config TARGET_ALL_PROFILES
+		bool "Enable all profiles by default"
+		default BUILDBOT
+
+	config TARGET_PER_DEVICE_ROOTFS
+		bool "Use a per-device root filesystem that adds profile packages"
+		default BUILDBOT
+		help
+		When disabled, all device packages from all selected devices
+		will be included in all images by default. (Marked as <*>) You will
+		still be able to manually deselect any/all packages.
+		When enabled, each device builds it's own image, including only the
+		profile packages for that device.  (Marked as {M}) You will be able
+		to change a package to included in all images by marking as {*}, but
+		will not be able to disable a profile package completely.
+		
+		To get the most use of this setting, you must set in a .config stub
+		before calling "make defconfig".  Selecting TARGET_MULTI_PROFILE and
+		then manually selecting (via menuconfig for instance) this option
+		will have pre-defaulted all profile packages to included, making this
+		option appear to have had no effect.
+
+menuconfig TARGET_DEVICE_bcm27xx_bcm2708_DEVICE_rpi
+	bool "Raspberry Pi B/B+/CM/Zero/ZeroW"
+	depends on TARGET_bcm27xx_bcm2708
+	default y if TARGET_ALL_PROFILES
+	select DEFAULT_base-files if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_iwinfo if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_iwinfo if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-brcmfmac if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-brcmfmac if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_wpad-basic-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_wpad-basic-mbedtls if TARGET_PER_DEVICE_ROOTFS
+
+
+	config TARGET_DEVICE_PACKAGES_bcm27xx_bcm2708_DEVICE_rpi
+		string "Raspberry Pi B/B+/CM/Zero/ZeroW additional packages"
+		default ""
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on TARGET_DEVICE_bcm27xx_bcm2708_DEVICE_rpi
+
+menuconfig TARGET_DEVICE_bcm27xx_bcm2709_DEVICE_rpi-2
+	bool "Raspberry Pi 2B/2B 1.2 (32bit)"
+	depends on TARGET_bcm27xx_bcm2709
+	default y if TARGET_ALL_PROFILES
+	select DEFAULT_base-files if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_iwinfo if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_iwinfo if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-brcmfmac if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-brcmfmac if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_wpad-basic-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_wpad-basic-mbedtls if TARGET_PER_DEVICE_ROOTFS
+
+
+	config TARGET_DEVICE_PACKAGES_bcm27xx_bcm2709_DEVICE_rpi-2
+		string "Raspberry Pi 2B/2B 1.2 (32bit) additional packages"
+		default ""
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on TARGET_DEVICE_bcm27xx_bcm2709_DEVICE_rpi-2
+
+menuconfig TARGET_DEVICE_bcm27xx_bcm2709_DEVICE_rpi-2
+	bool "Raspberry Pi 3B/3B+/CM3 (32bit) (Raspberry Pi 2B/2B 1.2 (32bit))"
+	depends on TARGET_bcm27xx_bcm2709
+	default y if TARGET_ALL_PROFILES
+	select DEFAULT_base-files if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_iwinfo if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_iwinfo if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-brcmfmac if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-brcmfmac if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_wpad-basic-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_wpad-basic-mbedtls if TARGET_PER_DEVICE_ROOTFS
+
+
+	config TARGET_DEVICE_PACKAGES_bcm27xx_bcm2709_DEVICE_rpi-2
+		string "Raspberry Pi 3B/3B+/CM3 (32bit) (Raspberry Pi 2B/2B 1.2 (32bit)) additional packages"
+		default ""
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on TARGET_DEVICE_bcm27xx_bcm2709_DEVICE_rpi-2
+
+menuconfig TARGET_DEVICE_bcm27xx_bcm2709_DEVICE_rpi-2
+	bool "Raspberry Pi 4B/400/CM4 (32bit) (Raspberry Pi 2B/2B 1.2 (32bit))"
+	depends on TARGET_bcm27xx_bcm2709
+	default y if TARGET_ALL_PROFILES
+	select DEFAULT_base-files if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_iwinfo if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_iwinfo if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-brcmfmac if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-brcmfmac if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_wpad-basic-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_wpad-basic-mbedtls if TARGET_PER_DEVICE_ROOTFS
+
+
+	config TARGET_DEVICE_PACKAGES_bcm27xx_bcm2709_DEVICE_rpi-2
+		string "Raspberry Pi 4B/400/CM4 (32bit) (Raspberry Pi 2B/2B 1.2 (32bit)) additional packages"
+		default ""
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on TARGET_DEVICE_bcm27xx_bcm2709_DEVICE_rpi-2
+
+menuconfig TARGET_DEVICE_bcm27xx_bcm2710_DEVICE_rpi-3
+	bool "Raspberry Pi 2B-1.2 (64bit) (Raspberry Pi 3B/3B+/CM3 (64bit))"
+	depends on TARGET_bcm27xx_bcm2710
+	default y if TARGET_ALL_PROFILES
+	select DEFAULT_base-files if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_iwinfo if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_iwinfo if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-brcmfmac if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-brcmfmac if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_wpad-basic-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_wpad-basic-mbedtls if TARGET_PER_DEVICE_ROOTFS
+
+
+	config TARGET_DEVICE_PACKAGES_bcm27xx_bcm2710_DEVICE_rpi-3
+		string "Raspberry Pi 2B-1.2 (64bit) (Raspberry Pi 3B/3B+/CM3 (64bit)) additional packages"
+		default ""
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on TARGET_DEVICE_bcm27xx_bcm2710_DEVICE_rpi-3
+
+menuconfig TARGET_DEVICE_bcm27xx_bcm2710_DEVICE_rpi-3
+	bool "Raspberry Pi 3B/3B+/CM3 (64bit)"
+	depends on TARGET_bcm27xx_bcm2710
+	default y if TARGET_ALL_PROFILES
+	select DEFAULT_base-files if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43430-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43430-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_iwinfo if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_iwinfo if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-brcmfmac if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-brcmfmac if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_wpad-basic-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_wpad-basic-mbedtls if TARGET_PER_DEVICE_ROOTFS
+
+
+	config TARGET_DEVICE_PACKAGES_bcm27xx_bcm2710_DEVICE_rpi-3
+		string "Raspberry Pi 3B/3B+/CM3 (64bit) additional packages"
+		default ""
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on TARGET_DEVICE_bcm27xx_bcm2710_DEVICE_rpi-3
+
+menuconfig TARGET_DEVICE_bcm27xx_bcm2711_DEVICE_rpi-4
+	bool "Raspberry Pi 4B/400/CM4 (64bit)"
+	depends on TARGET_bcm27xx_bcm2711
+	default y if TARGET_ALL_PROFILES
+	select DEFAULT_base-files if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_base-files if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_bcm27xx-gpu-fw if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_bcm27xx-gpu-fw if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_brcmfmac-nvram-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_brcmfmac-nvram-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_busybox if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_busybox if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ca-bundle if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ca-bundle if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_cypress-firmware-43455-sdio if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_cypress-firmware-43455-sdio if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dnsmasq if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dnsmasq if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_dropbear if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_dropbear if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_e2fsprogs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_e2fsprogs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_firewall4 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_firewall4 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_fstools if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_fstools if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_iwinfo if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_iwinfo if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-brcmfmac if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-brcmfmac if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-fs-vfat if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-fs-vfat if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nft-offload if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nft-offload if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-cp437 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-cp437 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-nls-iso8859-1 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-nls-iso8859-1 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-r8169 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-r8169 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-arm-bcm2835 if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-arm-bcm2835 if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-sound-core if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-sound-core if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-hid if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-usb-hid if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_kmod-usb-net-lan78xx if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_kmod-usb-net-lan78xx if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libgcc if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libgcc if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_libustream-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_libustream-mbedtls if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_logd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_logd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mkf2fs if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mkf2fs if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_mtd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_mtd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_netifd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_netifd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_nftables if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_nftables if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcp6c if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcp6c if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_odhcpd-ipv6only if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_odhcpd-ipv6only if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_opkg if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_opkg if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_partx-utils if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_partx-utils if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_ppp-mod-pppoe if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_ppp-mod-pppoe if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_procd-ujail if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_procd-ujail if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uci if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uci if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_uclient-fetch if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_uclient-fetch if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_urandom-seed if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_urandom-seed if TARGET_PER_DEVICE_ROOTFS
+	select DEFAULT_wpad-basic-mbedtls if !TARGET_PER_DEVICE_ROOTFS
+	select MODULE_DEFAULT_wpad-basic-mbedtls if TARGET_PER_DEVICE_ROOTFS
+
+
+	config TARGET_DEVICE_PACKAGES_bcm27xx_bcm2711_DEVICE_rpi-4
+		string "Raspberry Pi 4B/400/CM4 (64bit) additional packages"
+		default ""
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on TARGET_DEVICE_bcm27xx_bcm2711_DEVICE_rpi-4
+
+
+endmenu
+
+config HAS_SUBTARGETS
+	bool
+
+config HAS_DEVICES
+	bool
+
+config TARGET_BOARD
+	string
+
+		default "bcm27xx" if TARGET_bcm27xx
+config TARGET_SUBTARGET
+	string
+	default "generic" if !HAS_SUBTARGETS
+
+		default "bcm2708" if TARGET_bcm27xx_bcm2708
+		default "bcm2709" if TARGET_bcm27xx_bcm2709
+		default "bcm2710" if TARGET_bcm27xx_bcm2710
+		default "bcm2711" if TARGET_bcm27xx_bcm2711
+config TARGET_PROFILE
+	string
+	default "DEVICE_rpi" if TARGET_bcm27xx_bcm2708_DEVICE_rpi
+	default "DEVICE_rpi-2" if TARGET_bcm27xx_bcm2709_DEVICE_rpi-2
+	default "DEVICE_rpi-2" if TARGET_bcm27xx_bcm2709_DEVICE_rpi-2
+	default "DEVICE_rpi-2" if TARGET_bcm27xx_bcm2709_DEVICE_rpi-2
+	default "DEVICE_rpi-3" if TARGET_bcm27xx_bcm2710_DEVICE_rpi-3
+	default "DEVICE_rpi-3" if TARGET_bcm27xx_bcm2710_DEVICE_rpi-3
+	default "DEVICE_rpi-4" if TARGET_bcm27xx_bcm2711_DEVICE_rpi-4
+
+config TARGET_ARCH_PACKAGES
+	string
+	
+		default "arm_arm1176jzf-s_vfp" if TARGET_bcm27xx_bcm2708
+		default "arm_cortex-a7_neon-vfpv4" if TARGET_bcm27xx_bcm2709
+		default "aarch64_cortex-a53" if TARGET_bcm27xx_bcm2710
+		default "aarch64_cortex-a72" if TARGET_bcm27xx_bcm2711
+
+config DEFAULT_TARGET_OPTIMIZATION
+	string
+	default "-Os -pipe" if TARGET_bcm27xx_bcm2708
+	default "-Os -pipe" if TARGET_bcm27xx_bcm2709
+	default "-Os -pipe -mcpu=cortex-a53" if TARGET_bcm27xx_bcm2710
+	default "-Os -pipe" if TARGET_bcm27xx_bcm2711
+	default "-Os -pipe -funit-at-a-time"
+
+config CPU_TYPE
+	string
+	default "arm1176jzf-s+vfp" if TARGET_bcm27xx_bcm2708
+	default "cortex-a7+neon-vfpv4" if TARGET_bcm27xx_bcm2709
+	default "cortex-a53" if TARGET_bcm27xx_bcm2710
+	default "cortex-a72" if TARGET_bcm27xx_bcm2711
+	default ""
+
+config LINUX_5_15
+	bool
+
+	config DEFAULT_base-files
+		bool
+
+	config MODULE_DEFAULT_base-files
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_base-files
+		select PACKAGE_base-files
+
+	config DEFAULT_bcm27xx-gpu-fw
+		bool
+
+	config MODULE_DEFAULT_bcm27xx-gpu-fw
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_bcm27xx-gpu-fw
+		select PACKAGE_bcm27xx-gpu-fw
+
+	config DEFAULT_brcmfmac-nvram-43430-sdio
+		bool
+
+	config MODULE_DEFAULT_brcmfmac-nvram-43430-sdio
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_brcmfmac-nvram-43430-sdio
+		select PACKAGE_brcmfmac-nvram-43430-sdio
+
+	config DEFAULT_brcmfmac-nvram-43455-sdio
+		bool
+
+	config MODULE_DEFAULT_brcmfmac-nvram-43455-sdio
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_brcmfmac-nvram-43455-sdio
+		select PACKAGE_brcmfmac-nvram-43455-sdio
+
+	config DEFAULT_busybox
+		bool
+
+	config MODULE_DEFAULT_busybox
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_busybox
+		select PACKAGE_busybox
+
+	config DEFAULT_ca-bundle
+		bool
+
+	config MODULE_DEFAULT_ca-bundle
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_ca-bundle
+		select PACKAGE_ca-bundle
+
+	config DEFAULT_cypress-firmware-43430-sdio
+		bool
+
+	config MODULE_DEFAULT_cypress-firmware-43430-sdio
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_cypress-firmware-43430-sdio
+		select PACKAGE_cypress-firmware-43430-sdio
+
+	config DEFAULT_cypress-firmware-43455-sdio
+		bool
+
+	config MODULE_DEFAULT_cypress-firmware-43455-sdio
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_cypress-firmware-43455-sdio
+		select PACKAGE_cypress-firmware-43455-sdio
+
+	config DEFAULT_dnsmasq
+		bool
+
+	config MODULE_DEFAULT_dnsmasq
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_dnsmasq
+		select PACKAGE_dnsmasq
+
+	config DEFAULT_dropbear
+		bool
+
+	config MODULE_DEFAULT_dropbear
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_dropbear
+		select PACKAGE_dropbear
+
+	config DEFAULT_e2fsprogs
+		bool
+
+	config MODULE_DEFAULT_e2fsprogs
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_e2fsprogs
+		select PACKAGE_e2fsprogs
+
+	config DEFAULT_firewall4
+		bool
+
+	config MODULE_DEFAULT_firewall4
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_firewall4
+		select PACKAGE_firewall4
+
+	config DEFAULT_fstools
+		bool
+
+	config MODULE_DEFAULT_fstools
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_fstools
+		select PACKAGE_fstools
+
+	config DEFAULT_iwinfo
+		bool
+
+	config MODULE_DEFAULT_iwinfo
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_iwinfo
+		select PACKAGE_iwinfo
+
+	config DEFAULT_kmod-brcmfmac
+		bool
+
+	config MODULE_DEFAULT_kmod-brcmfmac
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-brcmfmac
+		select PACKAGE_kmod-brcmfmac
+
+	config DEFAULT_kmod-fs-vfat
+		bool
+
+	config MODULE_DEFAULT_kmod-fs-vfat
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-fs-vfat
+		select PACKAGE_kmod-fs-vfat
+
+	config DEFAULT_kmod-nft-offload
+		bool
+
+	config MODULE_DEFAULT_kmod-nft-offload
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-nft-offload
+		select PACKAGE_kmod-nft-offload
+
+	config DEFAULT_kmod-nls-cp437
+		bool
+
+	config MODULE_DEFAULT_kmod-nls-cp437
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-nls-cp437
+		select PACKAGE_kmod-nls-cp437
+
+	config DEFAULT_kmod-nls-iso8859-1
+		bool
+
+	config MODULE_DEFAULT_kmod-nls-iso8859-1
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-nls-iso8859-1
+		select PACKAGE_kmod-nls-iso8859-1
+
+	config DEFAULT_kmod-r8169
+		bool
+
+	config MODULE_DEFAULT_kmod-r8169
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-r8169
+		select PACKAGE_kmod-r8169
+
+	config DEFAULT_kmod-sound-arm-bcm2835
+		bool
+
+	config MODULE_DEFAULT_kmod-sound-arm-bcm2835
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-sound-arm-bcm2835
+		select PACKAGE_kmod-sound-arm-bcm2835
+
+	config DEFAULT_kmod-sound-core
+		bool
+
+	config MODULE_DEFAULT_kmod-sound-core
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-sound-core
+		select PACKAGE_kmod-sound-core
+
+	config DEFAULT_kmod-usb-hid
+		bool
+
+	config MODULE_DEFAULT_kmod-usb-hid
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-usb-hid
+		select PACKAGE_kmod-usb-hid
+
+	config DEFAULT_kmod-usb-net-lan78xx
+		bool
+
+	config MODULE_DEFAULT_kmod-usb-net-lan78xx
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_kmod-usb-net-lan78xx
+		select PACKAGE_kmod-usb-net-lan78xx
+
+	config DEFAULT_libc
+		bool
+
+	config MODULE_DEFAULT_libc
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_libc
+		select PACKAGE_libc
+
+	config DEFAULT_libgcc
+		bool
+
+	config MODULE_DEFAULT_libgcc
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_libgcc
+		select PACKAGE_libgcc
+
+	config DEFAULT_libustream-mbedtls
+		bool
+
+	config MODULE_DEFAULT_libustream-mbedtls
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_libustream-mbedtls
+		select PACKAGE_libustream-mbedtls
+
+	config DEFAULT_logd
+		bool
+
+	config MODULE_DEFAULT_logd
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_logd
+		select PACKAGE_logd
+
+	config DEFAULT_mkf2fs
+		bool
+
+	config MODULE_DEFAULT_mkf2fs
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_mkf2fs
+		select PACKAGE_mkf2fs
+
+	config DEFAULT_mtd
+		bool
+
+	config MODULE_DEFAULT_mtd
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_mtd
+		select PACKAGE_mtd
+
+	config DEFAULT_netifd
+		bool
+
+	config MODULE_DEFAULT_netifd
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_netifd
+		select PACKAGE_netifd
+
+	config DEFAULT_nftables
+		bool
+
+	config MODULE_DEFAULT_nftables
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_nftables
+		select PACKAGE_nftables
+
+	config DEFAULT_odhcp6c
+		bool
+
+	config MODULE_DEFAULT_odhcp6c
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_odhcp6c
+		select PACKAGE_odhcp6c
+
+	config DEFAULT_odhcpd-ipv6only
+		bool
+
+	config MODULE_DEFAULT_odhcpd-ipv6only
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_odhcpd-ipv6only
+		select PACKAGE_odhcpd-ipv6only
+
+	config DEFAULT_opkg
+		bool
+
+	config MODULE_DEFAULT_opkg
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_opkg
+		select PACKAGE_opkg
+
+	config DEFAULT_partx-utils
+		bool
+
+	config MODULE_DEFAULT_partx-utils
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_partx-utils
+		select PACKAGE_partx-utils
+
+	config DEFAULT_ppp
+		bool
+
+	config MODULE_DEFAULT_ppp
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_ppp
+		select PACKAGE_ppp
+
+	config DEFAULT_ppp-mod-pppoe
+		bool
+
+	config MODULE_DEFAULT_ppp-mod-pppoe
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_ppp-mod-pppoe
+		select PACKAGE_ppp-mod-pppoe
+
+	config DEFAULT_procd
+		bool
+
+	config MODULE_DEFAULT_procd
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_procd
+		select PACKAGE_procd
+
+	config DEFAULT_procd-ujail
+		bool
+
+	config MODULE_DEFAULT_procd-ujail
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_procd-ujail
+		select PACKAGE_procd-ujail
+
+	config DEFAULT_uci
+		bool
+
+	config MODULE_DEFAULT_uci
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_uci
+		select PACKAGE_uci
+
+	config DEFAULT_uclient-fetch
+		bool
+
+	config MODULE_DEFAULT_uclient-fetch
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_uclient-fetch
+		select PACKAGE_uclient-fetch
+
+	config DEFAULT_urandom-seed
+		bool
+
+	config MODULE_DEFAULT_urandom-seed
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_urandom-seed
+		select PACKAGE_urandom-seed
+
+	config DEFAULT_wpad-basic-mbedtls
+		bool
+
+	config MODULE_DEFAULT_wpad-basic-mbedtls
+		tristate
+		depends on TARGET_PER_DEVICE_ROOTFS
+		depends on m
+		default m if DEFAULT_wpad-basic-mbedtls
+		select PACKAGE_wpad-basic-mbedtls
+

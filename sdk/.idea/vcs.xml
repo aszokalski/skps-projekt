@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/feeds/base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/feeds/luci" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/feeds/routing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/feeds/skps" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/feeds/telephony" vcs="Git" />
+  </component>
+</project>
